@@ -1,0 +1,10 @@
+{
+    "brandText": "Исторические аллюзии",
+    "brandImage": "./img/logo.svg",
+    "links": [
+        {
+            "id": "contacts",
+            "title": "Контакты"
+        }
+    ]
+}

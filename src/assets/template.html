@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Авторские материалы по истории" />
+  <meta name="keywords" content="история, Античность, Средневековье, эпоха Возрождения, хронология" />
+  <meta name="author" content="Михаил Беляков" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="./img/logo.svg" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/hmf.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <script src="./js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script type="module" src="/src/main.ts" defer></script>
+  <title>Исторические аллюзии</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="brand-image" src="./img/logo.svg" />
+          <span id="brand-text"></span>
+        </a>
+        <div class="d-flex align-items-center justify-content-between" id="navbar-links"></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="toc-show"></div>
+    <aside class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="toc-offcanvas" aria-labelledby="toc-offcanvas-label">
+    </aside>
+    <div id="significant">
+      <section class="container d-none" id="intro"></section>
+      <section class="container d-none" id="feedback">hi</section>
+      <section class="container d-none" id="article"></section>
+    </div>
+  </main>
+  <footer>
+    &copy; 
+    <span id="copy-year">
+      <script>document.open();document.write(new Date().getFullYear());document.close()</script>
+    </span>, Михаил Беляков
+  </footer>
+</body>
+
+</html>
+<!-- Please don't remove this line ! -->
