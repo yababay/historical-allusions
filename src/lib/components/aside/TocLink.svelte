@@ -2,7 +2,7 @@
     import SvgIcon from '../icons/list-columns-reverse.svelte'
 </script>
 
-<a class="link-secondary toc-icon-holder" id="toc-show" type="button" data-bs-toggle="offcanvas" data-bs-target="#toc-offcanvas" aria-controls="toc-offcanvas">
+<a class="link-secondary toc-icon-holder" type="button" data-bs-toggle="offcanvas" data-bs-target="#toc-offcanvas" aria-controls="toc-offcanvas">
     <SvgIcon />
     <span>Список материалов</span>
 </a>

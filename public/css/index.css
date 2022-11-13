@@ -1,3 +1,16 @@
+aside li a::before {
+    content: '🔗 ';
+    font-size: 1rem;
+    color: grey;
+}
+
+#feedback div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
 article iframe {
     display: block;
     margin: 1rem auto;
