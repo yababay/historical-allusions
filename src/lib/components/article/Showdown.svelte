@@ -1,11 +1,11 @@
 <script type="ts">
     import Showdown from 'showdown'
     import TextLoader from "./TextLoader.svelte"
-    import EditIcon from './icons/pencil.svelte'
-    import SourceIcon from './icons/link-45deg.svelte'
-    import ReloadIcon from './icons/arrow-clockwise.svelte'
-    import PrintIcon from './icons/printer.svelte'
-    import TocIcon from './icons/list-columns-reverse.svelte'
+    import EditIcon from '../icons/pencil.svelte'
+    import SourceIcon from '../icons/link-45deg.svelte'
+    import ReloadIcon from '../icons/arrow-clockwise.svelte'
+    import PrintIcon from '../icons/printer.svelte'
+    import TocIcon from '../icons/list-columns-reverse.svelte'
 
     export let url: string
     export let processor: CallableFunction = txt => txt

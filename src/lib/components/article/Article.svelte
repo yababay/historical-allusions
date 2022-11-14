@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte'
 
-    import tuneMarkdown from '../tune-markdown.js'
+    import tuneMarkdown from '../../tune-markdown.js'
     import Showdown from "./Showdown.svelte";
 
     export let dir: string

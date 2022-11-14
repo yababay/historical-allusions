@@ -1,5 +1,5 @@
 import setupRouter from "@yababay67/svelte-hash-router-ts"
-import Article from './lib/components/Article.svelte'
+import Article from './lib/components/article/Article.svelte'
 import setupComponents from './lib/components'
 
 const selector = '#significant > section'

@@ -1,5 +1,5 @@
 <script type="ts">
-    import TextLoader from "../TextLoader.svelte"
+    import TextLoader from "../article/TextLoader.svelte"
     import Showdown from 'showdown'
 
     export let url: string = './articles/README.md'

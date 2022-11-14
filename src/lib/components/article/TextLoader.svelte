@@ -1,5 +1,7 @@
 <script type="ts">
-    import { delayedAction } from '../util'
+    import { delayedAction } from '../../util'
+
+    export let withLoader = true
     export let url: string
     export let onLoad: CallableFunction = ()=>{}
     export let failure: string = `Не удалось загрузить текстовые данные из <code>${url}</code>.`
@@ -8,12 +10,12 @@
 
     async function loadText() {
         const res = await fetch(url)        
-        await delayedAction(200, ()=> progress = 50)
+        if(withLoader) await delayedAction(200, ()=> progress = 50)
         const txt = await res.text()
-        await delayedAction(200, ()=> progress = 80)
+        if(withLoader) await delayedAction(200, ()=> progress = 80)
         const html = onLoad(txt)
-        await delayedAction(200, ()=> progress = 100)
-        await delayedAction(200)
+        if(withLoader) await delayedAction(200, ()=> progress = 100)
+        if(withLoader) await delayedAction(200)
         return html
     }
 </script>
